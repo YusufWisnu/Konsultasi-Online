@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pasien.InfoPsikologActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_info_atas"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/com2us2"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_info_atas_2"
+            android:layout_below="@id/linear_layout_info_atas"
+            android:layout_width="match_parent"
+
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/colorPrimary">
+                    <TextView
+                        android:id="@+id/tv_judul_nama_psikolog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text=""/>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_tengah"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/linear_layout_info_atas_2"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="15dp"
+                android:backgroundTint="@color/warna3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jadwal Praktek"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/senin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="Senin"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/senin1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="09:00-11:00"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="30dp"/>
+
+                    <TextView
+                        android:id="@+id/senin2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13:00-15:00"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="30dp"/>
+
+                    <TextView
+                        android:id="@+id/selasa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="Selasa"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/selasa1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="09:00-11:00"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="30dp"/>
+
+                    <TextView
+                        android:id="@+id/selasa2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="14:00-16:00"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="30dp"/>
+
+                    <TextView
+                        android:id="@+id/rabu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="Rabu"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/rabu1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="08:30-11:00"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="30dp"/>
+
+                    <TextView
+                        android:id="@+id/rabu2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="14:00-15:00"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="30dp"/>
+
+                    <TextView
+                        android:id="@+id/kamis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="Kamis"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/kamis1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="10:00-11:30"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="30dp"/>
+
+                    <TextView
+                        android:id="@+id/kamis2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="13:00-15:00"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="30dp"/>
+
+                    <TextView
+                        android:id="@+id/jumat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="Jumat"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/jumat1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="09:00-11:00"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="30dp"/>
+
+                    <TextView
+                        android:id="@+id/jumat2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="14:00-16:00"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="15dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_tengah2"
+            android:layout_below="@id/linear_tengah"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/warna3"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Tempat Praktek"/>
+
+                <RelativeLayout
+                    android:id="@+id/relative_jadwal"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgview_location"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_location_on_black_24dp"
+                        android:layout_marginLeft="15dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imgview_location"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="5dp"
+                        android:maxWidth="320dp"
+                        android:paddingBottom="10dp"
+                        android:textSize="16sp"
+                        android:text=""/>
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/linear_tengah2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="-10dp"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:id="@+id/btn_info_psikolog_ke_chat"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="Chat Sekarang"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

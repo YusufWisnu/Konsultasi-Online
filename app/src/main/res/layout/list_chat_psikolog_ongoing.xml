@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_chat_psikolog_ongoing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_chat_psikolog_ongoing"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/com2us2"/>
+
+        <LinearLayout
+            android:layout_width="245dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_chat_psikolog_ongoing_pasien_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_chat_psikolog_ongoing_pasien_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/timestamp_latest_chat_psikolog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kemarin"
+                android:layout_gravity="right"/>
+
+            <TextView
+                android:id="@+id/count_chat_psikolog"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:background="@drawable/rounded_chat_from_row"
+                android:textColor="@android:color/black"
+                android:padding="3dp"
+                android:text="999+"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

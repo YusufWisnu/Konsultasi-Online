@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    >
+    <!--tools:layout_marginTop="-200dp"-->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/paket_chat__judul_1_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Paket Kenalan Dund"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/paket_chat_description_1_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/paket_chat__judul_1_cardview"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/warna3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="Rp.100.000/"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-20dp"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="sesi"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:padding="10dp"
+                    android:text="Cocok untuk Anda yang belum pernah konsultasi ke psikolog"
+                    android:textColor="@android:color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_check_circle_black_24dp"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="1x Sesi Konseling Text"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_check_circle_black_24dp"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="1 Sesi = 1 Jam"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_paket_kenalan_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/paket_chat_description_1_cardview"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/border_button"
+                android:text="Ambil Paket"
+                android:textColor="@color/colorPrimary" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/paket_chat_judul2_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_paket_kenalan_chat"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="15dp"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Paket Lebih Dekat"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/paket_chat_description_2_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/paket_chat_judul2_cardview"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/warna3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="Rp.85.000/"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-20dp"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="sesi"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:padding="10dp"
+                    android:text="Pilihan bagi Anda yang memiliki masalah kurang lebih dari 6 bulan dengan harga yang terjangkau"
+                    android:textColor="@android:color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="15dp"
+                        android:src="@drawable/ic_check_circle_black_24dp"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="1x Sesi Konseling Text"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="15dp"
+                        android:src="@drawable/ic_check_circle_black_24dp"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="1 Sesi = 1 Jam"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_paket_lebih_dekat_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/paket_chat_description_2_cardview"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/border_button"
+                android:text="Ambil Paket"
+                android:textColor="@color/colorPrimary" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/paket_chat_judul3_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_paket_lebih_dekat_chat"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="15dp"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Paket Mantul"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/paket_chat_description_3_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/paket_chat_judul3_cardview"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/warna3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="Rp.120.000"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-20dp"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="sesi"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:padding="10dp"
+                    android:text="Pilihan bagi Anda yang memiliki masalah kurang lebih 18 bulan terakhir yang berlarut-larut dan menggangu keseharian anda"
+                    android:textColor="@android:color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="110dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="15dp"
+                        android:src="@drawable/ic_check_circle_black_24dp"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="1x Sesi Konseling Text"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="140dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="15dp"
+                        android:src="@drawable/ic_check_circle_black_24dp"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="4 Sesi = 1 Jam"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="170dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="15dp"
+                        android:src="@drawable/ic_check_circle_black_24dp"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Garansi 100% Uang Kembali"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_paket_mantul_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/paket_chat_description_3_cardview"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/border_button"
+                android:text="Ambil Paket"
+                android:textColor="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/btn_paket_mantul_chat">
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

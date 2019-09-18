@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:id="@+id/linear_layout_list_counseling_one">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgview_list_counseling_one"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+
+        android:src="@drawable/com2us2"/>
+
+    <LinearLayout
+        android:layout_width="245dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/txt_list_name_counseling_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_list_isi_teks_counseling_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fill the Chat"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/timestamp_latest_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="20/10/2020" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/count_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_count_circle"
+            android:text="300"
+            android:padding="3dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

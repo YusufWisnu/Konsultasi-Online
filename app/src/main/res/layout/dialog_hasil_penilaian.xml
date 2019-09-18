@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_info_disc_atas"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/warna3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:textColor="@android:color/black"
+                android:text="DISC"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/linear_layout_info_disc_atas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dominance"
+                android:textStyle="bold|italic"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:text="Suka  memimpin, gesit, suka berbicara, optimis, keras kepala"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                android:text="Anda menginginkan tantangan, menyukai keputusan yang cepat, Tidak takut untuk berkonflik, percaya diri dan memiliki visi yang besar untuk mengubah lingkungannya."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:text="Anda menjadi tipe yang menuntuk baik terhadap diri sendiri mau orang lain jika keadaan terdesak dan akan menjadi dominan dan kurang komunikatif dan kurang memiliki pendekatan emosional kepada lingkungannya."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Influence"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:text="senang bergaul, flexibel, angin-anginan, suka pesta, humoris"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:text="Anda sering menjadi inspirasi untuk orang disekitarnya dan selalu nyaman ketika di dalam kelompok."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:text="Anda tidak menyukai penolakan dari lingkungan, terkadang ceroboh dan tidak rapi atau teliti."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steadiness"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:text="kalem, pendiam, cuek, pesimis, sabar, pendengar yang baik"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:text=" Anda sabar, tekun dan penuh perhatian. Pembawaan tenang dan pendiam, tidak mudah bosan terhadap pekerjaan rutin. Menyukai ketenangan, tidak menyukai konflik dan menyukai lingkungan tidak banyak perubahan."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:text="Anda selektif dalam memilih teman, tidak menyukai perubahan yang mendadak dan cenderung keras kepala jika sudah memiliki pendirian."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compliance"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:text="Disiplin, teratur, suka debat, konsisten, tekun, suka kritik"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:text=" Anda menyukai hal yang berkaitan dengan detail, mengikuti prosedur dan tanggung jawab."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:text="Anda penuh pertimbangan, kritis, menyukai kesempurnaan, memiliki standar pekerjaan yang tidak dan akan serius untuk mewujudkannya."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:text="Anda Lambat dalam mengambil keputusan, kurang dapat menerima kritik dan kurang dapat menerima perubahan lingkungan."/>
+
+            <com.manojbhadane.QButton
+                android:id="@+id/btn_close_dialog"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

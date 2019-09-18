@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/appbarLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:ignore="MissingConstraints">-->
+
+        <!--<android.support.design.widget.TabLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/counseling_tab_layout"/>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/counseling_view_pager"/>-->
+    <ImageView
+        android:id="@+id/imageview_blm_ada_obrolan"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/blm_ada_obrolan_sw"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerview_counseling_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/recyclerview_counseling_main"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="@+id/recyclerview_counseling_main" />
+
+    <TextView
+        android:id="@+id/tv_blm_ada_obrolan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="24sp"
+        android:text="Anda Belum Memulai Obrolan"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerview_counseling_main"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_blm_ada_obrolan" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_counseling_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="243dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "59796191055",
+    "firebase_url": "https://konsulyuk-35510.firebaseio.com",
+    "project_id": "konsulyuk-35510",
+    "storage_bucket": "konsulyuk-35510.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59796191055:android:040c3608e7c16ede",
+        "android_client_info": {
+          "package_name": "com.example.konsulyuk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59796191055-45tqpr8tctbp777js7t2nqm4afq7ch06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3v9VFFBNzefTWIfAoowsporSwZL8Hzvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59796191055-45tqpr8tctbp777js7t2nqm4afq7ch06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

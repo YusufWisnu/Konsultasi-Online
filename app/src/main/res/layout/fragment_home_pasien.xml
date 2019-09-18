@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:id="@+id/linear_layout_home_pasien"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/konsulyuk_4"
+                android:layout_marginTop="10dp"
+                android:id="@+id/logo_home_pasien"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="25dp"
+                app:cardCornerRadius="25dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:id="@+id/logo_cardview_home_pasien">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/com2us2"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="100dp"
+                    android:padding="15dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_name_home_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Rp."
+                            android:textSize="12sp"
+                            android:textColor="@android:color/black"
+                            android:visibility="gone"
+                            android:gravity="top"/>
+                        <TextView
+                            android:id="@+id/tv_saldo_home_fragment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="300dp"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/floatingActionButton"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:clickable="true"
+                        android:tint="@android:color/white"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="Top Up"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="70dp"/>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/linear_layout_home_pasien_middle"
+            android:layout_below="@+id/linear_layout_home_pasien">
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btn_kuesioner_home"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/human_512"
+                android:backgroundTint="@color/warna3"
+                android:scaleType="center"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="150dp"
+                app:fabCustomSize="100dp"
+                app:maxImageSize="70dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@id/linear_layout_home_pasien_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="15dp"
+            android:text="Cek Kepribadianmu Sekarang"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear_layout_home_pasien_bottom"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/linear_layout_home_pasien_middle">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/cont_transparent_bg_button"
+                android:text="Start Counseling"
+                android:id="@+id/start_counseling_button"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

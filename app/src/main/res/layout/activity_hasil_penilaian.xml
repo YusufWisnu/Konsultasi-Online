@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pasien.HasilPenilaianActivity">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/pie_chart" />
+
+    <TextView
+        android:id="@+id/tv_chart_Penilaian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pie_chart"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_below="@+id/tv_chart_Penilaian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <com.manojbhadane.QButton
+            android:id="@+id/btn_chart_close"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginLeft="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_chart_Penilaian"
+            android:text="Back To Home"/>
+
+        <com.manojbhadane.QButton
+            android:id="@+id/btn_chart_detail"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginLeft="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_chart_Penilaian"
+            android:text="Info Detail"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

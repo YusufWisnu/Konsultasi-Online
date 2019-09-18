@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:layout_marginBottom="51dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_pasien_nama_temporary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_count_chat_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_user_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_psikolog_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="51dp"
+        android:layout_height="1dp"
+        android:backgroundTint="#c0c0c0">
+    </android.support.v7.widget.CardView>
+
+
+
+        <EditText
+            android:id="@+id/edit_text_chat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:inputType="textPersonName"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginRight="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_name_call_psikolog_tempo"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/chat_picture_image_button"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:padding="10dp"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:tint="@color/colorPrimary"-->
+            <!--android:src="@drawable/ic_image_black_24dp"/>-->
+
+    <ImageButton
+        android:id="@+id/chat_send_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_send_black_24dp"
+        android:tint="@color/colorPrimary" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_call_chat"
+        android:visibility="gone"/>
+</RelativeLayout>

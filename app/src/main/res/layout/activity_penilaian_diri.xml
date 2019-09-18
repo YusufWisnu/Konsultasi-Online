@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Pasien.PenilaianDiriActivity">
+
+    <com.varunest.sparkbutton.SparkButton
+        android:id="@+id/spark_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:sparkbutton_activeImage="@drawable/ic_check_circle_blue_24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:sparkbutton_inActiveImage="@android:color/white"
+        app:sparkbutton_iconSize="100dp"
+        app:sparkbutton_primaryColor="@color/colorPrimary"
+        app:sparkbutton_secondaryColor="@android:color/holo_purple" />
+
+    <com.manojbhadane.QButton
+        android:id="@+id/qb1"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="apakah kamu burung?"/>
+    <com.manojbhadane.QButton
+        android:id="@+id/qb2"
+        android:layout_below="@+id/qb1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="apakah kamu burung?"/>
+    <com.manojbhadane.QButton
+        android:id="@+id/qb3"
+        android:layout_below="@id/qb2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="apakah kamu burung?"/>
+    <com.manojbhadane.QButton
+        android:id="@+id/qb4"
+        android:layout_below="@id/qb3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="apakah kamu burung?"/>
+
+
+    <RelativeLayout
+        android:layout_below="@id/qb4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <com.manojbhadane.QButton
+            android:id="@+id/btn_next"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="22sp"
+            android:visibility="invisible"
+            android:textColor="@android:color/white"
+            app:qb_backgroundColor="#34e3e3"
+            app:qb_radius="100"
+            app:qb_strokeColor="@android:color/white"
+            app:qb_strokeWidth="5" />
+    </RelativeLayout>
+
+</RelativeLayout>

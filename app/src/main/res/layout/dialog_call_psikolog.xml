@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_dialog_call_psikolog_atas"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/warna3"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/com2us2"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_name_call_psikolog"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linear_layout_dialog_call_psikolog_atas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_hangup_psikolog"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#ff0000"
+            android:src="@drawable/ic_call_end_black_24dp"
+            android:layout_marginLeft="90dp"
+            app:fabCustomSize="80dp"
+            android:layout_marginTop="150dp"
+            android:scaleType="fitXY"/>
+
+        <Chronometer
+            android:id="@+id/timer_dialog_call_psikolog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:textSize="16sp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_pick_psikolog"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#00ff00"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/ic_call_white_24dp"
+            app:fabCustomSize="80dp"
+            android:scaleType="fitXY"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
